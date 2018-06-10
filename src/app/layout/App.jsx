@@ -5,6 +5,7 @@ import EventDashboard from '../../features/event/EventDashboard/EventDashboard'
 import EventDetailedPage from '../../features/event/EventDetailed/EventDetailedPage'
 import EventForm from '../../features/event/EventForm/EventForm'
 import NavBar  from '../../features/nav/NavBar/NavBar'
+import TestComponent  from '../../features/testarea/TestComponent'
 import HomePage  from '../../features/home/HomePage'
 import UserDetailedPage  from '../../features/user/UserDetailed/UserDetailedPage'
 import PeopleDashboard  from '../../features/user/PeopleDashboard/PeopleDashboard'
@@ -25,7 +26,8 @@ class App extends Component {
             <NavBar />
             <Container className="main">
               <Switch>
-                <Route path='/events' component={EventDashboard} />
+              <Route path='/test' component={TestComponent} />
+              <Route path='/events' component={EventDashboard} />
                 <Route path='/events/:id' component={EventDetailedPage} />
                 <Route path='/people' component={PeopleDashboard} />
                 <Route path='/profile/:id' component={UserDetailedPage} />
