@@ -21,8 +21,9 @@ let render = () => {
             <App />
           </ScrollToTop>
         </BrowserRouter>
-    </Provider>, rootEl)
-}
+    </Provider>, 
+    rootEl);
+};
 
 if (module.hot) {
     module.hot.accept('./app/layout/App', () => {
