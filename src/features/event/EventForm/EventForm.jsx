@@ -13,7 +13,7 @@ import PlaceInput from '../../../app/common/form/PlaceInput';
 import { isRequired, combineValidators, composeValidators, hasLengthGreaterThan } from 'revalidate';
 import moment from 'moment';
 import { geocodeByAddress, getLatLng } from 'react-places-autocomplete';
-import Script from 'react-load-script'
+import Script from 'react-load-script';
 
 const mapState = (state, ownProps) => {
   const eventId = ownProps.match.params.id;
