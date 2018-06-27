@@ -1,5 +1,5 @@
-import React from 'react'
-import { Grid, Menu, Header } from 'semantic-ui-react'
+import React from 'react';
+import { Grid, Menu, Header } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom'
 
 const SettingsNav = () => {
@@ -23,7 +23,7 @@ const SettingsNav = () => {
         <Menu.Item as={NavLink} to='/settings/account'>My Account</Menu.Item>
       </Menu>
     </Grid.Column>
-  )
-}
+  );
+};
 
-export default SettingsNav
+export default SettingsNav;

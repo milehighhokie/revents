@@ -7,9 +7,9 @@ const SelectInput = ({input, type, placeholder, multiple, options, meta: {touche
       <Select
         value={input.value || null}
         onChange={(e, data) => input.onChange(data.value)}
-        placeholder = {placeholder}
-        options = {options}
-        multiple = {multiple}
+        placeholder={placeholder}
+        options={options}
+        multiple={multiple}
       />
       {touched && error && <Label basic color='red'>{error}</Label>}
     </Form.Field>

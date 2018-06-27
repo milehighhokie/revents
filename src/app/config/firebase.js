@@ -1,20 +1,19 @@
 import firebase from 'firebase';
 import 'firebase/firestore';
 
-const firebaseConfig ={
-    apiKey: "AIzaSyAXOQ29WnxmUXsddE-8Ax2AOWYOYJpYcWI",
-    authDomain: "revents-207802.firebaseapp.com",
-    databaseURL: "https://revents-207802.firebaseio.com",
-    projectId: "revents-207802",
-    storageBucket: "",
-    messagingSenderId: "647910020761"
+const firebaseConfig = {
+  apiKey: "AIzaSyDTz7PhEojER4iyERzBNm32nz0pwKM3qDA",
+  authDomain: "revents-1077d.firebaseapp.com",
+  databaseURL: "https://revents-1077d.firebaseio.com",
+  projectId: "revents-1077d",
+  storageBucket: "revents-1077d.appspot.com",
+  messagingSenderId: "631636745857"
 }
 
 firebase.initializeApp(firebaseConfig);
 const firestore = firebase.firestore();
 const settings = {
-    timestampsInSnapshots: true
+  timestampsInSnapshots: true
 }
-firestore.settings(settings);
-
+firestore.settings(settings)
 export default firebase;
